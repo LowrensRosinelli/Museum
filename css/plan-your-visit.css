@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  background-color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background: #fffa65;
+  z-index: 1000;
+}
+
+header {
+  background-color: #42b983;
+  padding: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.intro {
+  background-color: #fafafa;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #42b983;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.visit-info {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.visit-info h2 {
+  color: #42b983;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section {
+  padding: 2rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+footer {
+  background-color: #42b983;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    padding: 1rem;
+  }
+  .visit-info {
+    padding: 1rem;
+  }
+  .contact-section {
+    padding: 1rem;
+  }
+}

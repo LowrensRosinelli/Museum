@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  background-color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background: #fffa65;
+  z-index: 1000;
+}
+
+header {
+  background-color: #42b983;
+  padding: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.page-intro {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.page-intro h1 {
+  color: #42b983;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.exhibitions {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.exhibitions h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.exhibitions-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.exhibitions-grid article {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  flex: 0 1 220px;
+}
+
+.exhibitions-grid article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.exhibitions-grid article h3 {
+  color: #42b983;
+  margin-bottom: 0.5rem;
+}
+
+.events {
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+.events h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.events article {
+  margin-bottom: 1.5rem;
+}
+
+.events article h3 {
+  color: #42b983;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #42b983;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .exhibitions {
+    padding: 1rem;
+  }
+  .exhibitions-grid {
+    flex-direction: column;
+  }
+  .events {
+    padding: 1rem;
+  }
+}
