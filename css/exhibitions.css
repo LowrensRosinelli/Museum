@@ -151,7 +151,31 @@ footer {
   margin-top: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
+  header {
+    background-color: #0A3641;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .main-nav ul li {
+    margin: 10px 0;
+  }
+  .main-nav ul li a {
+    font-size: 18px;
+  }
+  .page-intro {
+    padding: 1rem;
+  }
+  .page-intro h1 {
+    font-size: 1.5rem;
+  }
   .exhibitions {
     padding: 1rem;
   }
